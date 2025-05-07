@@ -6,6 +6,10 @@ app.use(express.json());
 
 const ZAPI_URL = 'https://api.z-api.io/instances/3E0D12E4E2EC7081131CAAEF140028B5/token/BF9FD36E43D60DB574E59E6F/send-text';
 
+app.get('/', (req, res) => {
+  res.send('API online!');
+});
+
 app.post('/webhook', async (req, res) => {
   const body = req.body;
 
