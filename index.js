@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Substitua com seus dados reais da Z-API
-const ZAPI_URL = 'https://api.z-api.io/instances/SEU_ID/token/SEU_TOKEN/send-message';
+const ZAPI_URL = 'https://api.z-api.io/instances/3E0D12E4E2EC7081131CAAEF140028B5/token/BF9FD36E43D60DB574E59E6F/send-message';
 
 app.post('/webhook', async (req, res) => {
   const message = req.body.message;
