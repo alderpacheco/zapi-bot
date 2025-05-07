@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
   res.send('Bot rodando!');
 });
 
+app.post('/', (req, res) => {
+  console.log(req.body); // Isso mostra o que chegou no terminal
+  res.sendStatus(200);
+});
+
 app.post('/webhook', async (req, res) => {
   const body = req.body;
 
